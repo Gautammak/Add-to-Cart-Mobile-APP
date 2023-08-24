@@ -1,0 +1,36 @@
+#4
+import './App.css';
+import User from './User';
+
+function App() {
+  return (
+    <div className="App">
+     <User data = {{name:'anil' ,age:23}}/>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+import React from 'react'
+
+function User(props) {
+  return (
+    <div>
+      <h1>user component {props.data.name}</h1>
+      <h1>user component {props.data.age}</h1>
+    </div>
+  )
+}
+
+export default User
+
+
+components
+container
+service
+   action
+   reducers
+   constants
